@@ -24,5 +24,5 @@ $ npm i
 - Run The app
 
 ```
-npm run
+$ npm start
 ```

@@ -2,11 +2,13 @@
   "name": "react-app-2",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://abdoshbr3322.github.io/React-Todo",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
     "bootstrap": "^5.2.3",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.5",
@@ -17,6 +19,8 @@
     "web-vitals": "^3.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
