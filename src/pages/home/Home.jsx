@@ -1,3 +1,4 @@
+// Import components
 import Todos from '../../components/Todos/Todos';
 
 function Home() {

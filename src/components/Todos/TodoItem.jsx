@@ -3,7 +3,7 @@ import TodoEdit from "./TodoEdit";
 import TodoActions from "./TodoActions";
 
 // Import hooks
-import useToggle from "../../hooks/useToggle";
+import { useToggle } from "../../hooks/useToggle";
 import { useTodos } from "../../hooks/useTodos";
 
 export default function TodoItem(props) {

@@ -1,13 +1,17 @@
 // Import react and its dependencies
 import { createContext, useEffect, useLayoutEffect, useState } from "react";
+
+// Import outlet from react router dom
 import { Outlet } from "react-router-dom";
 
 // Import components
-import bootstrap from "bootstrap/dist/js/bootstrap.bundle";
+import Header from './components/Header/Header';
 
 // Import css
 import "./App.scss";
-import Header from './components/Header/Header';
+
+// Import bootstrap
+import bootstrap from "bootstrap/dist/js/bootstrap.bundle";
 
 const TodosProvider = createContext();
 

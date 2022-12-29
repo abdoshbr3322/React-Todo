@@ -2,7 +2,7 @@
 
 ### To Initialize this app follow the following instructions
 
-- Make sure you have node and npm installed
+- Ensure you have nodeJs and npm installed
   
 ```
 $ node --version

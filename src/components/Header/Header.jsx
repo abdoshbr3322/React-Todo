@@ -1,3 +1,4 @@
+// Import react and its dependencies
 import React from 'react'
 
 export default function Header() {
