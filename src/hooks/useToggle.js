@@ -1,3 +1,4 @@
+// Import hooks
 import { useState } from "react";
 
 export function useToggle(init = false) {

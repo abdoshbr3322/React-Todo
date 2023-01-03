@@ -1,4 +1,7 @@
+// Import hooks
 import { useContext } from "react";
+
+// Import contexy provider
 import { TodosProvider } from "../App";
 
 const saveTodos = (todos) => {
