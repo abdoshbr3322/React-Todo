@@ -1,8 +1,5 @@
-// Import react and its dependencies
-import { useRef } from "react";
-
-// Import hooks
-import { useTodos } from "../../hooks/useTodos";
+// Import components
+import TodoForm from './TodoForm';
 
 function AddTodoBtn() {
   return (
@@ -12,7 +9,7 @@ function AddTodoBtn() {
       data-bs-title="Add a new todo item"
     >
       <button
-        className="add-todo btn btn-primary btn-circle"
+        className="add-todo btn btn-primary btn-circle p-0"
         data-bs-toggle="modal"
         data-bs-target="#add-todo-form"
       >
@@ -23,9 +20,6 @@ function AddTodoBtn() {
 }
 
 function AddTodoForm() {
-  const { updateTodos, add } = useTodos();
-  const inputTitleRef = useRef(null);
-
   return (
     <div id="add-todo-form" className="modal fade">
       <div className="modal-dialog">
@@ -35,25 +29,7 @@ function AddTodoForm() {
             <button className="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div className="modal-body">
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                updateTodos(add, { title: inputTitleRef.current.value });
-              }}
-            >
-              <label htmlFor="title" className="me-2">
-                Title
-              </label>
-              <input
-                type="text"
-                id="title"
-                ref={inputTitleRef}
-                placeholder="Todo Title"
-              />
-              <button className="submit-todo ms-2" data-bs-dismiss="modal">
-                Save
-              </button>
-            </form>
+            <TodoForm action="add" />
           </div>
         </div>
       </div>

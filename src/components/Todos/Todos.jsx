@@ -10,16 +10,16 @@ import "./Todos.scss";
 
 export default function Todos() {
   const {todos} = useTodos();
-  const message = todos ? <h1>Your todo list list is empty</h1> : null;
+
+  const message = todos.length === 0 ? <h2>Your todo list list is empty</h2> : null;
 
   return (
     <div className="todos">
-      {!message}
+      {message}
       <ul>
         {todos.map((todoItem, index) => (
           <TodoItem
             key={index}
-            item={todoItem}
             index={index}
           />
         ))}

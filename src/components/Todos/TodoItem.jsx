@@ -1,5 +1,5 @@
 // Import components
-import TodoEdit from "./TodoEdit";
+import TodoForm from './TodoForm';
 import TodoActions from "./TodoActions";
 
 // Import hooks
@@ -7,8 +7,9 @@ import { useToggle } from "../../hooks/useToggle";
 import { useTodos } from "../../hooks/useTodos";
 
 export default function TodoItem(props) {
-  const { item, index } = props;
-  const { updateTodos, edit, remove } = useTodos();
+  const { updateTodos, remove, todos } = useTodos();
+  const { index } = props;
+  const item = todos[index];
   const [showForm, toggleShowForm] = useToggle();
 
   return (
@@ -24,11 +25,11 @@ export default function TodoItem(props) {
         />
       </div>
       {showForm && (
-        <TodoEdit
-          updateTodos={updateTodos}
-          edit={edit}
-          index={index}
+        <TodoForm
+          action="edit"
+          toggleShowForm={toggleShowForm}
           item={item}
+          index={index}
         />
       )}
     </li>

@@ -17,7 +17,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 // create routers
 const router = createBrowserRouter([
   {
-    path: "/React-Todo",
+    path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
