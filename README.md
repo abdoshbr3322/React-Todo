@@ -1,5 +1,7 @@
 # React-Todo
 
+#### [Here is a preview of the app](https://abdoshbr3322.github.io/React-Todo)
+
 ### To Initialize this app follow the following instructions
 
 - Ensure you have nodeJs and npm installed
@@ -12,7 +14,7 @@ $ npm --version
 - Clone the repository
 
 ```
-$ git clone git add git@github.com:abdoshbr3322/React-Todo.git
+$ git clone git@github.com:abdoshbr3322/React-Todo.git
 ```
 
 - Install dependencies
